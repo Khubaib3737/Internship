@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heading">
+        <h2>Welcome To Calculator App</h2>
+        <h4>Making Calculations Easy</h4>
+    </div>
+    <div id="cal-body" class="cal-body">
+        <div id="display" class="display"></div>
+        <div class="btns" style="padding-top: 40px;">
+            <div class="buttons">
+                <div class="inner">
+                    <button style="width: 130px; color: red; background-color: lightcoral;" onclick="clearAll()">AC</button>
+                    <button style="width: 130px; margin-left: 15px;color: red;" onclick="delLast()">DEL</button>
+                </div>
+                <button class="operator" onclick="addToDisplay('/')">/</button>
+            </div>
+            <div class="buttons">
+                <button onclick="addToDisplay('7')">7</button>
+                <button onclick="addToDisplay('8')">8</button>
+                <button onclick="addToDisplay('9')">9</button>
+                <button class="operator" onclick="addToDisplay('*')">*</button>
+            </div>
+            <div class="buttons">
+                <button onclick="addToDisplay('4')">4</button>
+                <button onclick="addToDisplay('5')">5</button>
+                <button onclick="addToDisplay('6')">6</button>
+                <button class="operator" onclick="addToDisplay('+')">+</button>
+            </div>
+            <div class="buttons">
+                <button onclick="addToDisplay('1')">1</button>
+                <button onclick="addToDisplay('2')">2</button>
+                <button onclick="addToDisplay('3')">3</button>
+                <button class="operator" onclick="addToDisplay('-')">-</button>
+            </div>
+            <div class="buttons">
+                <button onclick="addToDisplay('.')">.</button>
+                <button onclick="addToDisplay('0')">0</button>
+                <button class="operator" style="width: 180px;" onclick="calResult()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

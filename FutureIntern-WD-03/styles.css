@@ -1,0 +1,72 @@
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 246, 225);
+  height: 100vh;
+}
+body .heading{
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  text-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  /*
+  background: #e2e5e9;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  color: rgb(88, 88, 88);*/
+}
+#cal-body{
+  width: 400px;
+  border-radius: 20px;
+  background: #dde1e7;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  padding: 45px;
+  scale: 0.6;
+}
+.display{
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  background: #dde1e7;
+  box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+  border: 0;
+  color: rgb(116, 116, 116);
+  font-size: 2.5rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: auto; /* Allow horizontal scroll */
+  word-wrap: break-word;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+.input input:focus{
+  outline: none;
+  background: #dde1e7;
+  box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+}
+.buttons button{
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  border: 0;
+  font-size: 2rem;
+  border-radius: 50px;
+  background: #dde1e7;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+  color: rgb(137, 137, 137);
+}
+.buttons button:focus{
+  background: #dde1e7;
+  box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+}
+.buttons{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.cal-body .btns .operator{
+  background-color: rgb(86, 243, 86);
+}
